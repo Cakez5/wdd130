@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @keyframes moveBackground {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+        }
+        body {
+            background: linear-gradient(135deg, #FF8C00, #D9534F, #F0A000,  #FF5733, #A02020);
+            background-size: 400% 400%;
+            animation: moveBackground 30s linear infinite alternate;
+        }
+        .navbar-brand {
+            color: #ff6347; /* Change this to your desired title color */
+        }
+        .navbar-nav .nav-link:active,
+        .navbar-nav .nav-link.active {
+            color: #215ddf !important; /* Change this to your desired active tab color */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #3a46e9 !important; /* Change this to your desired hover color */
+        }
+        .content-box {
+            background-color: #ffffff; /* Change this to your desired box background color */
+            border: 1px solid #cccccc; /* Change this to your desired border color */
+            padding: 20px;
+            border-radius: 10px; /* Change this to your desired border radius */
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Add a box shadow */
+        }
+        .logo-box {
+            max-height: 100px; /* Adjust the max-height to your desired logo height */
+            max-width: 100px; /* Adjust the max-width to your desired logo width */
+            overflow: hidden; /* Ensure content doesn't overflow */
+        }
+        .logo-box img {
+            max-height: 100%; /* Make sure the image fits within the logo box height */
+            max-width: 100%; /* Make sure the image fits within the logo box width */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <div class="logo-box">
+                    <img src="/static/images/LOGO.png" alt="Logo">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/games">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/roadmap">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="content-box">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<footer>            
+    <p>&copy; 2025 Flame Flair Studios. All rights reserved.</p>
+</footer>
+</html>
