@@ -25,12 +25,13 @@ main {
 } 
 
 aside {
-  width: 20rem;
+  width: 20rem; /* Sets the width */
+  margin: 0 auto; /* Centers the element horizontally */
   padding: 1rem;
   background-color: #eee;
   border: 1px solid #ccc;
   color: #333;
-} 
+}
 
 aside img {
   width: 200px;
