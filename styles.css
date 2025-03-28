@@ -1,5 +1,7 @@
-
-
+nav {
+  background-color: #f8f8f8; /* Example property */
+  padding: 10px; /* Example property */
+}
 nav a {
   text-decoration: none;
   color: #333;
