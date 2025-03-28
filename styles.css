@@ -48,6 +48,7 @@ p {
   font-size: 1rem; /* Example font size; adjust as needed */
   color: #333; /* Example color */
   margin-top: 1rem; /* Space between the image and text */
+  padding: 0;
 }
 
 footer {
