@@ -9,12 +9,15 @@ nav a {
 } 
 
 h1 {
-  font-size: 2rem;
-  font-family: Arial, sans-serif;
-  color: #444;
-} 
+  text-align: center; /* Centers the title */
+  font-size: 2rem; /* Example font size; adjust as needed */
+  font-family: Arial, sans-serif; /* Example font style */
+  color: #444; /* Example color */
+}
 
 img {
+  display: block; /* Makes the image a block element */
+  margin: 0 auto; /* Adds equal margin on both sides to center it */
   width: 150px; /* Example width; adjust as needed */
   height: auto; /* Maintains the aspect ratio */
 }
@@ -41,12 +44,11 @@ aside img {
 } 
 
 p {
-  margin: 1rem;
-  padding: 0;
-  line-height: 1.5;
-  font-size: 16px;
-  color: #333; 
-} 
+  text-align: center; /* Centers the text */
+  font-size: 1rem; /* Example font size; adjust as needed */
+  color: #333; /* Example color */
+  margin-top: 1rem; /* Space between the image and text */
+}
 
 footer {
   margin-top: 15px;
