@@ -1,68 +1,50 @@
-main {
-    max-width: 840px;
-  }
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-  }
-  aside img {
-    width: 200px;
-    height: auto;
-  }
-  main img {
-    width: 150px;
-    height: auto;
-  }
-  p {
-    margin: 1rem; /* Provides spacing between paragraphs */
-    line-height: 1.5; /* Improves readability */
-    font-size: 16px; /* Sets a consistent font size */
-    color: #333; /* Ensures text color consistency */
-  }
-  footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-  }
-  nav {
-    background-color: #f4f4f4;
-    padding: 1rem;
-    text-align: center;
-} nav a {
+
+
+nav a {
   text-decoration: none;
   color: #333;
   margin: 0 1rem;
-} h1 {
+} 
+
+h1 {
   font-size: 2rem;
   font-family: Arial, sans-serif;
   color: #444;
-} img {
+} 
+
+img {
   max-width: 100%;
   height: auto;
-} main {
+} 
+
+main {
   max-width: 840px;
   margin: 0 auto;
-} aside {
+} 
+
+aside {
   width: 20rem;
   padding: 1rem;
   background-color: #eee;
   border: 1px solid #ccc;
   color: #333;
-} aside img {
+} 
+
+aside img {
   width: 200px;
   height: auto;
   margin-bottom: 1rem;
-} p {
+} 
+
+p {
   margin: 1rem;
   padding: 0;
   line-height: 1.5;
   font-size: 16px;
   color: #333; 
-} footer {
+} 
+
+footer {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;
