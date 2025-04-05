@@ -48,3 +48,15 @@ footer a {
   footer img {
     width: 30px;
   }
+  nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    margin: 0 20px; /* Adds space between each <a> element */
+    font-size: 1em; /* Optional: Adjust font size for visual balance */
+  }
+  
+  nav {
+    display: flex; /* Ensures the <a> elements align horizontally */
+    justify-content: center; /* Centers the links */
+    gap: 20px; /* Adds consistent spacing between items */
+  }
