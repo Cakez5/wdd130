@@ -1,7 +1,9 @@
 :root {
     --primary-color: #004a99;
-    --secondary-color: #eaeaea;
+    --secondary-color: #285B7B;
     --font-primary: 'Roboto', sans-serif;
+    --accent-color: #B4D5DE;
+    --accent-color: #DAE9FB;
   }
   body {
     font-family: var(--font-primary);
@@ -28,7 +30,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: rgb(255, 255, 255);
     text-shadow: 2px 2px 5px black;
   }
   @media (max-width: 768px) {
