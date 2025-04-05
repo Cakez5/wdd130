@@ -1,39 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 :root {
     --primary-color: #004a99;
     --secondary-color: #285B7B;
     --font-primary: 'Roboto', sans-serif;
-    --accent-color: #B4D5DE;
-    --accent-color: #DAE9FB;
-  }
-  body {
+    --accent1-color: #B4D5DE;
+    --accent2-color: #DAE9FB;
+}
+
+body {
     font-family: var(--font-primary);
     color: var(--primary-color);
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
     color: var(--primary-color);
-  }
-  
-  a img {
-    text-decoration: none; /* Social media icons */
-  }
-  .hero {
+}
+
+.hero {
     position: relative;
     background-image: url('../images/hero.jpg');
     background-size: cover;
     height: 500px;
-  }
-  
-  .hero h1 {
+}
+
+.hero h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(255, 255, 255);
+    color: white;
     text-shadow: 2px 2px 5px black;
-  }
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .hero {
         height: 300px;
     }
@@ -41,22 +42,24 @@
         font-size: 1.5em;
     }
 }
-footer a {
-    margin: 0 10px;
-  }
-  
-  footer img {
-    width: 30px;
-  }
-  nav a {
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
     text-decoration: none;
     color: var(--primary-color);
-    margin: 0 20px; /* Adds space between each <a> element */
-    font-size: 1em; /* Optional: Adjust font size for visual balance */
-  }
-  
-  nav {
-    display: flex; /* Ensures the <a> elements align horizontally */
-    justify-content: center; /* Centers the links */
-    gap: 20px; /* Adds consistent spacing between items */
-  }
+    margin: 0 20px;
+    padding: 10px;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+footer img {
+    width: 30px;
+}
