@@ -8,6 +8,13 @@
     --accent2-color: #DAE9FB;
 }
 
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
 body {
     font-family: var(--font-primary);
     color: var(--primary-color);
@@ -56,6 +63,11 @@ nav a {
     padding: 10px;
 }
 
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 footer a {
     margin: 0 10px;
 }
