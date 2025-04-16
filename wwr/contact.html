@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us | Whitewater Rafting</title>
+        <meta name="description" content="Get in touch with Whitewater Rafting. Contact us for inquiries, reservations, or suggestions about our services.">
+        <link rel="stylesheet" href="styles/rafting.css">
+    </head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="images/rafting.jpg" alt="Rafting Company Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Information -->
+        <section>
+            <h1>Contact Us</h1>
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> 123 Green River dr, Vernel, USA</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> info@raftingfun.com</p>
+        </section>
+
+        <!-- Google Map -->
+        <section>
+            <h2>Our Location</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?...your-map-link..."
+                width="400"
+                height="300"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <!-- Employee Profiles -->
+        <section>
+            <h2>Meet Our Team</h2>
+            <figure>
+                <img src="images/employee1.jpg" alt="John Doe">
+                <figcaption>John Doe - Tour Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpg" alt="Jane Smith">
+                <figcaption>Jane Smith - Customer Support</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.jpg" alt="Chris Taylor">
+                <figcaption>Chris Taylor - Adventure Planner</figcaption>
+            </figure>
+        </section>
+
+        <!-- Contact Form -->
+    <!-- Other sections like Contact Information or Employee Profiles -->
+
+    <section>
+        <h2>Send Us a Message</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <p>Purpose of Message:</p>
+            <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+            <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+            <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Rafting Fun by Zakary</p>
+        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
+        <p><a href="wireframe-contact.png" target="_blank">View Contact Us Wireframe</a></p>
+    </footer>
+</body>
+</html>
