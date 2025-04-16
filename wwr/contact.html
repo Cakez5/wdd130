@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact Us | Whitewater Rafting</title>
-        <meta name="description" content="Get in touch with Whitewater Rafting. Contact us for inquiries, reservations, or suggestions about our services.">
-        <link rel="stylesheet" href="styles/rafting.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Whitewater Rafting</title>
+    <meta name="description" content="Get in touch with Whitewater Rafting. Contact us for inquiries, reservations, or suggestions about our services.">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
 <body>
     <!-- Header -->
     <header>
@@ -23,9 +23,8 @@
     <main>
         <!-- Contact Information -->
         <section>
-            <h1>Contact Us</h1>
             <h2>Contact Information</h2>
-            <p><strong>Address:</strong> 123 Green River dr, Vernel, USA</p>
+            <p><strong>Address:</strong> 123 River Drive, Adventure Town, USA</p>
             <p><strong>Phone:</strong> (123) 456-7890</p>
             <p><strong>Email:</strong> info@raftingfun.com</p>
         </section>
@@ -38,8 +37,7 @@
                 width="400"
                 height="300"
                 allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
+                loading="lazy">
             </iframe>
         </section>
 
@@ -61,35 +59,33 @@
         </section>
 
         <!-- Contact Form -->
-    <!-- Other sections like Contact Information or Employee Profiles -->
+        <section>
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
 
-    <section>
-        <h2>Send Us a Message</h2>
-        <form action="submit_form.php" method="POST">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
+                <p>Purpose of Message:</p>
+                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
 
-            <p>Purpose of Message:</p>
-            <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-            <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-            <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
 
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+                <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
 
-            <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-</main>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Rafting Fun by Zakary</p>
+        <p>© 2025 Whitewater Rafting</p>
         <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
         <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
         <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
